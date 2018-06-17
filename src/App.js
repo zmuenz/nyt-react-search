@@ -9,16 +9,16 @@ import Search from "./pages/Search";
 class App extends Component {
   render() {
     return (
-      <div>
-        <TopNav />
-        <Jumbotron />
-        <Router>
+      <Router>
+        <div>
+          <TopNav />
+          <Jumbotron />
           <Switch>
             <Route exact path="/" component={Search} />
             <Route exact path="/saved" component={SavedArticles} />
           </Switch>
-        </Router>
-      </div>
+        </div>
+      </Router>
     );
   }
 }

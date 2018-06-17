@@ -5,7 +5,7 @@ const Jumbotron = props => (
     <div className="jumbotron jumbotron-fluid">
         <div className="container">
             <div className="mx-auto">
-                <h1 className="display-4 text-center text-info">(ReactJS) New York Times Article Scrubber</h1>
+                <h1 className="display-4 text-center text-info">(ReactJS) New York Times Article Search</h1>
                 <p className="lead text-center">Search for and save articles of interest.</p>
             </div>
         </div>

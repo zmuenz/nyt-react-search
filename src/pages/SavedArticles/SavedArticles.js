@@ -23,7 +23,7 @@ class SavedArticles extends Component {
         <div>
             <SavedBox>
             {!this.state.articles.length ? (
-                <h1 className="text-center">Save articles to begin!</h1>
+                <h1 className="text-center">Save searched articles to see them here!</h1>
             ) : (
                 <ResultsList>
                 {this.state.articles.map(article => {

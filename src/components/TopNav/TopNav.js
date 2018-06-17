@@ -5,13 +5,19 @@ const TopNav = () => (
     <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-info">
             <div className="container">
-                <span className="navbar-brand text-white" href="/">NYT-React</span>
+                <a className="navbar-brand text-white" href="/">
+                    NYT-React
+                </a>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="/">Search</a>
+                        <a className="nav-link text-white" href="/">
+                            Search
+                        </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="/saved">Saved Articles</a>
+                        <a className="nav-link text-white" href="/saved">
+                            Saved Articles
+                        </a>
                     </li>
                 </ul>
             </div>
