@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import SearchBox from "../components/SearchBox";
-import ResultsBox from "../components/SearchBox";
+import SavedBox from "../../components/SearchBox";
+import ResultsList from "../../components/SearchBox";
+import ListItem from "../../components/SearchBox";
 import API from "../../utils/API";
 
-class Search extends Component {
+class SavedArticles extends Component {
   state = {
     books: [],
     title: "",
@@ -74,4 +75,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default SavedArticles;

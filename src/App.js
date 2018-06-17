@@ -3,8 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TopNav from "./components/TopNav";
 import Jumbotron from "./components/Jumbotron";
-import SavedArticles from "./components/SavedArticles";
-import Search from "./components/Search";
+import SavedArticles from "./pages/SavedArticles";
+import Search from "./pages/Search";
 
 class App extends Component {
   render() {

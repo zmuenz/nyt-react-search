@@ -6,12 +6,12 @@ const TopNav = () => (
         <nav className="navbar navbar-expand-lg navbar-light bg-info">
             <div className="container">
                 <span className="navbar-brand text-white" href="/">NYT-React</span>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/">Search</a>
+                <ul className="nav justify-content-end">
+                    <li className="nav-item">
+                        <a className="nav-link text-white" href="/">Search</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="/saved">Saved Articles</a>
+                    <li className="nav-item">
+                        <a className="nav-link text-white" href="/saved">Saved Articles</a>
                     </li>
                 </ul>
             </div>

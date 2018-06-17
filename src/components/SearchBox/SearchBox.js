@@ -19,7 +19,7 @@ const SearchBox = () => (
                         <label for="endYear">End Year</label>
                         <input type="number" className="form-control" id="endYear" />
                     </div>
-                    <button type="submit" class="btn btn-danger mb-2">Search</button>
+                    <button type="submit" className="btn btn-danger mb-2">Search</button>
                 </form>
             </div>
         </div>
