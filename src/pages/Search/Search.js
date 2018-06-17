@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import SearchBox from "../../components/SearchBox";
-import ResultsBox from "../../components/SearchBox";
-import ResultsList from "../../components/SearchBox";
-import ListItem from "../../components/SearchBox";
+import { ResultsBox, ResultsList, ListItem } from "../../components/ResultsBox";
 import API from "../../utils/API";
 
 class Search extends Component {

@@ -1,6 +1,6 @@
 import React from "react";
 
-// RecipeListItem renders a bootstrap list item containing data from the recipe api call
+// ListItem renders a bootstrap list item containing data from the articles api call
 export const ListItem = props => (
   <li className="list-group-item">
     <div className="container">

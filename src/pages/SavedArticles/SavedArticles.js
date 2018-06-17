@@ -1,53 +1,21 @@
 import React, { Component } from "react";
-import SavedBox from "../../components/SearchBox";
-import ResultsList from "../../components/SearchBox";
-import ListItem from "../../components/SearchBox";
+import { SavedBox } from "../../components/SavedBox";
+import { ResultsList, ListItem } from "../../components/ResultsBox";
 import API from "../../utils/API";
 
 class SavedArticles extends Component {
   state = {
-    books: [],
-    title: "",
-    author: "",
-    synopsis: ""
+    articles: []
   };
 
   componentDidMount() {
-    this.loadBooks();
+    this.loadArticles();
   }
 
-  loadBooks = () => {
-    API.getBooks()
-      .then(res =>
-        this.setState({ books: res.data, title: "", author: "", synopsis: "" })
-      )
+  loadArticles = () => {
+    API.getArticles()
+      .then(res => this.setState({ articles: res.data }))
       .catch(err => console.log(err));
-  };
-
-  deleteBook = id => {
-    API.deleteBook(id)
-      .then(res => this.loadBooks())
-      .catch(err => console.log(err));
-  };
-
-  handleInputChange = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
-  };
-
-  handleFormSubmit = event => {
-    event.preventDefault();
-    if (this.state.title && this.state.author) {
-      API.saveBook({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
-      })
-        .then(res => this.loadBooks())
-        .catch(err => console.log(err));
-    }
   };
 
   render() {
@@ -55,7 +23,7 @@ class SavedArticles extends Component {
         <div>
             <SavedBox>
             {!this.state.articles.length ? (
-                <h1 className="text-center">Search for articles to begin!</h1>
+                <h1 className="text-center">Save articles to begin!</h1>
             ) : (
                 <ResultsList>
                 {this.state.articles.map(article => {
